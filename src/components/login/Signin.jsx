@@ -1,4 +1,5 @@
 import './Signin.css';
+import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (
@@ -47,7 +48,7 @@ const Signin = () => {
           </form>
 
           <p className="switch-text">
-            Don’t have an account? <a href="#">Sign up</a>
+            Don’t have an account? <Link to="/signup">Sign up</Link>
           </p>
         </div>
       </div>
