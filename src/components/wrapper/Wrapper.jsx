@@ -20,11 +20,11 @@ import Details from "../../redux/components/Details.jsx";
 
 import Counter from  "../use-reducer/Counter.jsx";
 
-export function Wrapper( {checkLoginStatus} ){
+export function Wrapper( {isLoggedIn} ){
     return (
         <div className="container">
              <Routes>
-                <Route path={"/"} element={ checkLoginStatus? <Home /> : <Signin />}/>
+                <Route path={"/"} element={ isLoggedIn? <Home /> : <Signin />}/>
                 <Route path={"/products"} element={<Apis />}/>
                  <Route
                         path={"/redux"}
