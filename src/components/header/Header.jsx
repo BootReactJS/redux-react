@@ -1,7 +1,7 @@
 import './Header.css';
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ logout }) => {
   return (
     <header className="modern-header">
       <div className="header-container">
@@ -11,14 +11,13 @@ const Header = () => {
         </div>
 
         <nav className="header-menu">
-          <Link to="/">Home</Link>
+           <Link to="/">Home</Link>
           <Link to="/products">Products</Link>
-          <Link to="/signin">Sign In</Link>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/signin">Profile</Link>
+          <Link to="/signup">Redux</Link>
             <Link to="/contactus">Contact Us</Link>
             <Link to="/optional">Additional Content</Link>
-            <Link to="/redux">Redux</Link>
-            <Link to="/" id="logout">Logout</Link>
+            <Link to="/" id="logout" onClick={logout}>Logout</Link>
 
         </nav>
 

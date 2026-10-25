@@ -15,8 +15,8 @@ function App(){
 
     return(
       <div>
-          Welcome to React — en route to JavaScript XML  - { JSX }
-              {isLoggedIn ? <Header logout={logout}/> : null};
+          Welcome to React   with JavaScript XML  rider
+              {isLoggedIn ? <Header logout={logout}/> : null}
             <Wrapper isLoggedIn={isLoggedIn}  />
       </div>
     );
